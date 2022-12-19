@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/mongodb.iml" filepath="$PROJECT_DIR$/.idea/mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../mongodb-cluster-docker-compose/.idea/mongodb-cluster-docker-compose.iml" filepath="$PROJECT_DIR$/../mongodb-cluster-docker-compose/.idea/mongodb-cluster-docker-compose.iml" />
     </modules>
   </component>
 </project>

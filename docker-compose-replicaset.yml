@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mongo1:
     container_name: mongo1
-    image: mongo:6.0.1
+    image: mongo:6.0.3
     volumes:
       - ./scripts/rs-init.sh:/scripts/rs-init.sh
       - ./scripts/init.js:/scripts/init.js
@@ -22,7 +22,7 @@ services:
 
   mongo2:
     container_name: mongo2
-    image: mongo:6.0.1
+    image: mongo:6.0.3
     networks:
       - mongo-network
     ports:
@@ -31,7 +31,7 @@ services:
     entrypoint: [ "/usr/bin/mongod", "--bind_ip_all", "--replSet", "dbrs" ]
   mongo3:
     container_name: mongo3
-    image: mongo:6.0.1
+    image: mongo:6.0.3
     networks:
       - mongo-network
     ports:

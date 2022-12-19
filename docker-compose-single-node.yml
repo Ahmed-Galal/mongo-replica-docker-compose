@@ -11,7 +11,7 @@ services:
     networks:
       - mongo-network
     healthcheck:
-      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongo -u mongo -p mongo --quiet) -eq 1
+      test: test $$(echo "rs.initiate().ok || rs.status().ok" | mongosh -u mongosh -p mongosh --quiet) -eq 1
       interval: 10s
       start_period: 30s
     command: ["--replSet", "dbrs", "--bind_ip_all"]
@@ -19,4 +19,3 @@ services:
 networks:
   mongo-network:
     driver: bridge
-view raw
